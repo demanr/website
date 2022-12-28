@@ -1,15 +1,105 @@
 ---
+import SocialLink from "../components/SocialLink.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<html class="w-full" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Rachelle DeMan</title>
+  </head>
+  <body class="bg-[#0C0D14] text-white align-center w-full">
+    <div class="absolute w-full -z-10 overflow-hidden">
+		<div class="relative w-full md:left-1/2 -translate-x-1/2 md:-translate-x-1/3">
+		  <svg
+			viewBox="0 0 822 631"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg"
+			class="w-[200%] md:w-2/3"
+		  >
+			<rect
+			  x="419.584"
+			  y="-302.327"
+			  width="470.794"
+			  height="805.9"
+			  transform="rotate(31.3467 419.584 -302.327)"
+			  fill="url(#paint0_linear_10_139)"></rect>
+			<rect
+			  x="0.329346"
+			  y="-57.3891"
+			  width="470.794"
+			  height="805.9"
+			  transform="rotate(-31.35 0.329346 -57.3891)"
+			  fill="url(#paint1_linear_10_139)"></rect>
+			<defs>
+			  <linearGradient
+				id="paint0_linear_10_139"
+				x1="654.981"
+				y1="-302.327"
+				x2="654.981"
+				y2="503.573"
+				gradientUnits="userSpaceOnUse"
+			  >
+				<stop stop-color="#FF3257"></stop>
+				<stop offset="1" stop-color="#FF3257" stop-opacity="0"></stop>
+			  </linearGradient>
+			  <linearGradient
+				id="paint1_linear_10_139"
+				x1="235.726"
+				y1="-57.3891"
+				x2="235.726"
+				y2="748.511"
+				gradientUnits="userSpaceOnUse"
+			  >
+				<stop stop-color="#FF3257"></stop>
+				<stop offset="1" stop-color="#FF3257" stop-opacity="0"></stop>
+			  </linearGradient>
+			</defs>
+		  </svg
+    >
+		</div>
+	</div>
+
+    <main
+      class="flex flex-col items-center w-full justify-center p-16 md:p-24 text-center font-bold"
+    >
+      <h1 class="text-5xl md:text-7xl font-bold pt-12">Rachelle</h1>
+      <h1 class="text-5xl md:text-7xl font-bold pb-8 md:pb-8">DeMan</h1>
+      <h2 class="text-2xl md:text-3xl font-thin pb-14 md:pb-16">
+        Front End Developer.<br />CS Student @ McMaster.
+      </h2>
+      <a
+        class="text-xl md:text-2xl py-2 px-6 md:py-4 md:px-10 bg-[#D42C4B] rounded-xl"
+        href="/resume_2023.pdf">Resume</a
+      > 
+      <div class="flex flex-col justify-center gap-8 pt-32 umd:pt-24 md:flex-row">
+        <SocialLink
+          link="https://github.com/demanr"
+          title="Github"
+          name="demanr"
+          logo="/githubLogo.svg"
+        />
+        <SocialLink
+          link="https://www.linkedin.com/in/r-deman/"
+          title="LinkedIn"
+          name="r-deman"
+          logo="/linkedinLogo.svg"
+        />
+        <SocialLink
+          link="mailto:rachelledeman@icloud.com"
+          title="Email"
+          name="rachelledeman@icloud.com"
+          logo="/mailLogo.svg"
+        />
+      </div>
+    </main>
+  </body>
 </html>
