@@ -1,0 +1,8 @@
+---
+const {logo, title, name, link} = Astro.props
+---
+
+<a class="flex justify-left md:justify-center items-center gap-4 font-bold text-white" href={link}>
+    <img class="w-8 h-8" src={logo} alt={title} />
+    <p class="text-lg md:text-2xl">{name}</p>
+</a>
