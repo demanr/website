@@ -7,7 +7,7 @@ module.exports = {
     },
     extend: {
       keyframes: {
-        "fade": {
+        fade: {
           "0%": {
             opacity: "0",
           },
@@ -16,11 +16,16 @@ module.exports = {
           },
         },
         animation: {
-          'fade-in-s': 'fade 4.5s ease-in-out'
-        }
+          "fade-in-s": "fade 4.5s ease-in-out",
+        },
+      },
+
+      animation: {
+        spinSlow: "spin 8s linear infinite",
+        spinDJ: "spin 4s ease infinite",
       },
     },
-	variants: {},
+    variants: {},
     plugins: [],
   },
 };

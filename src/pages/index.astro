@@ -1,4 +1,5 @@
 ---
+import CurrentlyPlaying from "../components/LastFM";
 import SocialLink from "../components/SocialLink.astro";
 ---
 
@@ -107,6 +108,11 @@ import SocialLink from "../components/SocialLink.astro";
           logo="/mailLogo.svg"
         />
       </div>
+      
     </main>
+    <div class="pb-12 md:p-0"></div>
+    <div class="fixed bottom-0 right-0 z-10 w-full md:w-fit md:p-4 md:absolute backdrop-blur-sm">
+        <CurrentlyPlaying client:only />
+    </div>
   </body>
 </html>
