@@ -2,7 +2,10 @@ import { useEffect, useState } from "react";
 import { useLastFM } from "use-last-fm";
 
 const CurrentlyPlaying = () => {
-  const lastFM = useLastFM("rachelled75", "12cfeef09cd104b4ffb6eaa7c16c65bb");
+  const lastFM = useLastFM(
+    import.meta.env.PUBLIC_LASTFM_USER,
+    import.meta.env.PUBLIC_LASTFM_TOKEN
+  );
   const [ready, setReady] = useState<boolean>(false);
 
   // ready set to true after 1.8 seconds
