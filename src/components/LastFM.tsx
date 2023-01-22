@@ -28,7 +28,7 @@ const CurrentlyPlaying = () => {
   return (
     <a
       href={lastFM.song.url}
-      className="transition overflow-hidden flex h-[7rem] wp-full md:w-[20rem] gap-4 md:pr-8 bg-none md:bg-[#DE2D4E] p-4 md:rounded-full"
+      className="transition overflow-hidden flex h-[7rem] wp-full lg:w-[20rem] gap-4 lg:pr-8 bg-none lg:bg-[#DE2D4E] p-4 lg:rounded-full"
     >
       <div className="h-full overflow-hidden border-2 rounded-full aspect-square animate-spinDJ">
         <img
