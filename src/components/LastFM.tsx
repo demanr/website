@@ -19,8 +19,9 @@ const CurrentlyPlaying = () => {
     return (
       <a
         href="#"
-        className="opacity-0 -translate-y-[35%]"
+        className="opacity-5 -translate-y-[35%]"
         aria-label="void"
+        id="player"
       ></a>
     );
   }
@@ -28,7 +29,8 @@ const CurrentlyPlaying = () => {
   return (
     <a
       href={lastFM.song.url}
-      className="transition overflow-hidden flex h-[7rem] wp-full lg:w-[20rem] gap-4 lg:pr-8 bg-none lg:bg-[#DE2D4E] p-4 lg:rounded-full"
+      id="player"
+      className="transition duration-500 overflow-hidden flex h-[7rem] wp-full lg:w-[20rem] gap-4 lg:pr-8 bg-none lg:bg-[#DE2D4E] p-4 lg:rounded-full opacity-1"
     >
       <div className="h-full overflow-hidden border-2 rounded-full aspect-square animate-spinDJ">
         <img
