@@ -43,13 +43,13 @@ import SocialLink from "../components/SocialLink.astro";
   <body class="bg-[#0C0D14] text-white align-center w-full h-full">
     <div class="absolute w-full overflow-hidden -z-10">
       <div
-        class="relative w-full -translate-x-1/2 md:left-1/2 md:-translate-x-1/3"
+        class="relative w-full -translate-x-1/2 sm:left-1/3 sm:-translate-x-1/3 lg:left-1/2 lg:-translate-x-1/3"
       >
         <svg
           viewBox="0 0 822 631"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          class="w-[200%] md:w-2/3"
+          class="w-[200%] sm:w-[100%] lg:w-2/3"
         >
           <rect
             x="419.584"
@@ -133,10 +133,8 @@ import SocialLink from "../components/SocialLink.astro";
     <div class="fixed bottom-0 right-0 z-10 w-full lg:w-fit lg:p-4 backdrop-blur-sm lg:backdrop-blur-0 min-h-[1px]">
         <CurrentlyPlaying client:only />
     </div>
-    <footer
-        class="relative bottom-0 w-full p-5 text-center text-xs"
-      >
+    <footer class="sm:absolute bottom-0 w-full py-6 text-center text-xs">
         © Rachelle DeMan 2023 - All Rights Reserved.
-      </footer>
+    </footer>
   </body>
 </html>
