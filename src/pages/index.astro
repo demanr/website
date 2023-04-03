@@ -1,6 +1,7 @@
 ---
 import CurrentlyPlaying from "../components/LastFM";
 import SocialLink from "../components/SocialLink.astro";
+import CopyrightBeta from "../components/CopyrightBeta";
 ---
 
 <html class="w-full h-full" lang="en">
@@ -133,8 +134,8 @@ import SocialLink from "../components/SocialLink.astro";
     <div class="fixed bottom-0 right-0 z-10 w-full lg:w-fit lg:p-4 backdrop-blur-sm lg:backdrop-blur-0 min-h-[1px]">
         <CurrentlyPlaying client:only />
     </div>
-    <footer class="sm:absolute bottom-0 w-full py-6 text-center text-xs">
-        © Rachelle DeMan 2023 - All Rights Reserved.
-    </footer>
+    <div class="bottom-0 left-0 right-0 w-full">
+      <CopyrightBeta />
+    </div>
   </body>
 </html>
